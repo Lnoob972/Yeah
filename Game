@@ -1,0 +1,8 @@
+local button = script.Parent
+local appFrame = button.Parent.MainAppFrame -- The frame you want to show/hide
+
+local function toggleApp()
+    appFrame.Visible = not appFrame.Visible
+end
+
+button.MouseButton1Click:Connect(toggleApp)
